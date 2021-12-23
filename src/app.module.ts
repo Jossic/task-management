@@ -12,6 +12,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       username: 'postgres',
       password: 'postgres',
       database: 'task-management',
+      autoLoadEntities: true,
+      synchronize: true,
     }),
   ],
 })
